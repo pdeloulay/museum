@@ -1,0 +1,80 @@
+apiVersion: v1
+entries:
+  alpine:
+  - apiVersion: v1
+    appVersion: "3.3"
+    created: "2020-09-16T13:29:42.846825321-04:00"
+    description: Deploy an extensive Alpine Linux pod for testing
+    digest: df338a5cc1c57548dcc1b0ac8dc646dc1651d75166bec73e74d4fbfd6ab15b1f
+    home: https://k8s.io/helm
+    name: alpine
+    sources:
+    - https://github.com/helm/helm
+    urls:
+    - alpine-0.4.0-14.tgz
+    version: 0.4.0-14
+  alpine-certs:
+  - apiVersion: v1
+    appVersion: "4.0"
+    created: "2020-09-16T13:29:42.874964949-04:00"
+    description: Deploy an Alpine Linux pod for testing certificates using the new
+      helm install mechanism for secrets.
+    digest: 9468c04a784bc75431d7666e368b4268f2cfe8875c2cb9f77c22c850857db113
+    home: https://k8s.io/helm
+    name: alpine-certs
+    sources:
+    - https://github.com/helm/helm
+    urls:
+    - alpine-certs-0.4.0-6.tgz
+    version: 0.4.0-6
+  alpine-db:
+  - apiVersion: v1
+    appVersion: "3.3"
+    created: "2020-09-16T13:29:42.90681194-04:00"
+    dependencies:
+    - name: helm-lib
+      repository: https://svsartifactory.swinfra.net/artifactory/itom-helm-charts-stable
+      version: 1.1.5
+    description: Deploy an Alpine Linux pod for testing databases using the new helm
+      install mechanism for secrets.
+    digest: e2e37a9c8cf41a0073fa0b111bccb03f02a92268aba9d5c7261fcc53af44a859
+    home: https://k8s.io/helm
+    name: alpine-db
+    sources:
+    - https://github.com/helm/helm
+    urls:
+    - alpine-db-0.4.0-12.tgz
+    version: 0.4.0-12
+  alpine-db-legacy:
+  - apiVersion: v1
+    appVersion: "3.3"
+    created: "2020-09-16T13:29:42.946211309-04:00"
+    description: Deploy an Alpine Linux pod for testing charts that still include
+      a _vk.yaml
+    digest: 4a04c9e151e6851792f2fa9c26b12e86524eb859fa9fb06f16758fe0cabc7572
+    home: https://k8s.io/helm
+    name: alpine-db-legacy
+    sources:
+    - https://github.com/helm/helm
+    urls:
+    - alpine-db-legacy-0.4.0-11.tgz
+    version: 0.4.0-11
+  alpine-suite:
+  - apiVersion: v1
+    appVersion: "2020.08"
+    created: "2020-09-16T13:29:42.992774724-04:00"
+    dependencies:
+    - name: helm-lib
+      repository: https://svsartifactory.swinfra.net/artifactory/itom-helm-charts-stable
+      version: 1.1.5
+    description: An example Alpine linux pod for use with the Micro Focus Bosun Helm
+      installation
+    digest: 0caa9ad6527bdc85484d648190a8f9ed02fd8fd27e259f2ee686df02421305b0
+    home: https://k8s.io/helm
+    name: alpine-suite
+    sources:
+    - https://github.com/helm/helm
+    urls:
+    - alpine-suite-0.4.0-15.tgz
+    version: 0.4.0-15
+generated: "2020-09-16T13:29:42.810922456-04:00"
